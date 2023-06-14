@@ -21,15 +21,17 @@ const DefaultLayout = ({ children }) => {
   // }, [isLogin]);
 
   return (
-    <>
+    <div className="relative">
       {/* {isLogin && <Login Login={setIsLogin} />} */}
       {Headless && <HeadLess Click={setHeadLess} />}
       <Header Login={setIsLogin} Click={setHeadLess} />
-      <main>{children}</main>
+      <main className="z-0">{children}</main>
       <Footer />
-      <OnTop />
-      <Hotline />
-    </>
+      <div className="z-50 fixed">
+        <OnTop />
+        <Hotline />
+      </div>
+    </div>
   );
 };
 

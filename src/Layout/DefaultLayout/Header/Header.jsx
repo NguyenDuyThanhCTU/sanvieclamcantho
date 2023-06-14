@@ -16,7 +16,7 @@ const Header = ({ Login, Click }) => {
     { id: 1, name: "Cơ hội việc làm", link: "/job" },
     { id: 2, name: "Công cụ", link: "/" },
     { id: 3, name: "Gói đăng tin miễn phí", link: "/" },
-    { id: 4, name: "Nhà tuyển dụng", link: "/" },
+    { id: 4, name: "Nhà tuyển dụng", link: "/employer" },
   ];
   return (
     <div className="font-LexendDeca h-[114px] bg-primary">

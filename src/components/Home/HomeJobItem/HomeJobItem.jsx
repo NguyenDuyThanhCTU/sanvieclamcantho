@@ -2,9 +2,10 @@ import React from "react";
 import { AiOutlineHeart } from "react-icons/ai";
 import { BiMoney } from "react-icons/bi";
 import { CiLocationOn } from "react-icons/ci";
+
 const HomeJobItem = ({ vacancies, company, image, location, salary }) => {
   return (
-    <div className="p-2  border hover:border-colortopdownBlue rounded-md font-LexendDeca">
+    <div className="p-2  border hover:border-colortopdownBlue rounded-md font-LexendDeca ">
       <div className="flex justify-between items-center font-normal text-[14px]">
         {vacancies}
         <AiOutlineHeart className="inline-block text-colortopdownBlue text-[20px]" />

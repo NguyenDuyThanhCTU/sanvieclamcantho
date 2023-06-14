@@ -10,14 +10,14 @@ import Handbook from "./Handbook/Handbook";
 
 const Home = () => {
   return (
-    <div className="font-LexendDeca">
+    <div className="font-LexendDeca ">
       <Banner />
       <UrgentJob />
       <SuggetedJob />
 
       <SubBanner />
-      {/*<Handbook />
-      <div className="mb-11 cursor-pointer flex justify-between mx-80">
+      <Handbook />
+      {/*<div className="mb-11 cursor-pointer flex justify-between mx-80">
         <div className="flex flex-col gap-3">
           <h3>Việc làm theo Nghề nghiệp</h3>
           <div className="font-light text-[14px]">

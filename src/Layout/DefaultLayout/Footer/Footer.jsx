@@ -3,7 +3,7 @@ import { BsHeadset } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <div className=" bg-primary font-LexendDeca text-white w-screen">
+    <div className=" bg-primary font-LexendDeca text-white w-full">
       {" "}
       <div className="flex justify-center pt-9 pb-8 d:flex-row p:flex-col">
         <div className=" border-b-[1px] border-gray-400  h-[240px] d:w-[550px] p:w-screen d:mx-0 p:mx-3">
@@ -127,23 +127,25 @@ const Footer = () => {
               </p>
             </div>
           </div>
-          <div>
-            <h2 className="font-bold">Thông tin</h2>
-            <ul className="mt-[14px] text-[12px] font-normal flex flex-col gap-1">
-              <li>Cẩm nang nghề nghiệp</li>
-              <li>Báo giá dịch vụ</li>
-              <li>Điều khoản sử dụng</li>
-              <li>Quy định bảo mật</li>
-              <li>Sơ đồ trang web</li>
-            </ul>
-          </div>
-          <div>
-            <h2>Kết nối với chúng tôi</h2>
+          <div className="flex gap-20">
+            <div>
+              <h2 className="font-bold">Thông tin</h2>
+              <ul className="mt-[14px] text-[12px] font-normal flex flex-col gap-1">
+                <li>Cẩm nang nghề nghiệp</li>
+                <li>Báo giá dịch vụ</li>
+                <li>Điều khoản sử dụng</li>
+                <li>Quy định bảo mật</li>
+                <li>Sơ đồ trang web</li>
+              </ul>
+            </div>
+            <div>
+              <h2>Kết nối với chúng tôi</h2>
+            </div>
           </div>
         </div>
       </div>
       <div className="flex justify-center text-[14px] font-poppins font-normal py-5">
-        <p className="pr-2">©2022 All Rights reserved ADS Company</p>
+        <p className="pr-2">©2023 All Rights reserved ADS Company</p>
         <p className="pl-2 border-l-[1px] border-gray-400">
           Designed by Thanh Dev ADS Company
         </p>

@@ -16,7 +16,7 @@ export const AllRoutes = [
     component: Job,
   },
   {
-    path: "/emloyer",
+    path: "/employer",
     component: Employer,
   },
 

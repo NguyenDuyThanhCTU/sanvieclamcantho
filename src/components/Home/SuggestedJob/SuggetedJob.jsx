@@ -4,8 +4,9 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper";
 import { FcAlarmClock, FcIdea } from "react-icons/fc";
-import HomeJobItem from "../../Item/HomeJobItem";
+import HomeJobItem from "../HomeJobItem/HomeJobItem";
 import { Jobs } from "../../../Utils/Item";
+
 const SuggetedJob = () => {
   return (
     <div className="border d:mx-72 p:mx-1 my-[32px]">

@@ -78,7 +78,7 @@ const Banner = () => {
         ))}
       </Swiper>
 
-      <div className="px-20pt-6 pb-3 p:hidden d:block">
+      <div className="px-20 pt-6 pb-3 p:hidden d:block">
         <div className="flex justify-start cursor-pointer">
           {jobs.map((items) => (
             <div className="border flex items-center flex-col gap-5 p-3 hover:shadow-lg">
