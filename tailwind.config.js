@@ -21,6 +21,7 @@ module.exports = {
 
       fontFamily: {
         LexendDeca: ["Lexend Deca", "sans-serif"],
+        Lexend: ["Lexend", "sans-serif"],
       },
       colors: {
         Blue3D: "#1D1D3D",

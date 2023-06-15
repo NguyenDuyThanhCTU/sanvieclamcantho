@@ -1,10 +1,7 @@
 import { Link } from "react-router-dom";
 import React, { useState } from "react";
-import { BsBellFill, BsList, BsListTask } from "react-icons/bs";
+import { BsBellFill, BsList } from "react-icons/bs";
 import { IoMdArrowDropdown } from "react-icons/io";
-import HeaderItem from "../../../components/Item/HeaderItem";
-import DropDown from "../../../components/Admin/Item/DropDown";
-import DropDownS from "../../../components/Item/DropDownS";
 import DropDownUser from "../../../components/Item/DropDownUser";
 import PhoneDropDown from "../../../components/Item/PhoneDropDown";
 
@@ -80,22 +77,22 @@ const Header = ({ Login, Click }) => {
             </div>
           </div>
 
-          <div className="  text-[13px] font-semibold d:flex p:hidden gap-10">
+          <div className="  text-[13px] font-semibold d:flex p:hidden gap-1">
             <Link
-              className="h-16 leading-[64px] hover:bg-privaryhover pl-[28px] pr-[20px]"
+              className="h-16 leading-[64px] hover:bg-privaryhover  px-10 "
               to="/employer/prices"
             >
               Báo giá
             </Link>
 
             <Link
-              className="h-16 leading-[64px] hover:bg-privaryhover px-2"
+              className="h-16 leading-[64px] hover:bg-privaryhover px-10"
               href="/"
             >
               Gói đăng tin miễn phí
             </Link>
             <Link
-              className="h-16 leading-[64px] hover:bg-privaryhover px-2"
+              className="h-16 leading-[64px] hover:bg-privaryhover px-10"
               href="/"
             >
               Công cụ tính lương
