@@ -9,7 +9,7 @@ import DropDownUser from "../../../components/Item/DropDownUser";
 import PhoneDropDown from "../../../components/Item/PhoneDropDown";
 
 const Header = ({ Login, Click }) => {
-  const [isLoggedIn, setIsLoggedIn] = useState(true);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [isDropDown, setIsDropDown] = useState(false);
   const [DropDownMainHeader, setDropDownMainHeader] = useState(false);
   const itemDropDown = [
@@ -19,7 +19,7 @@ const Header = ({ Login, Click }) => {
     { id: 4, name: "Nhà tuyển dụng", link: "/employer" },
   ];
   return (
-    <div className="font-LexendDeca h-[114px] bg-primary">
+    <div className="font-LexendDeca  h-16 bg-primary">
       <div className="bg-primary flex flex-row  justify-evenly h-16 text-white items-center cursor-pointer ">
         <div className=" flex justify-between p:w-full d:w-auto mx-6">
           <Link to="/">
@@ -80,41 +80,29 @@ const Header = ({ Login, Click }) => {
             </div>
           </div>
 
-          <div className="  text-[13px] font-semibold d:flex p:hidden">
+          <div className="  text-[13px] font-semibold d:flex p:hidden gap-10">
             <Link
               className="h-16 leading-[64px] hover:bg-privaryhover pl-[28px] pr-[20px]"
-              to="/job"
+              to="/employer/prices"
             >
-              Cơ hội việc làm
+              Báo giá
             </Link>
-            <div className="h-16 leading-[64px] hover:bg-privaryhover px-4 group">
-              <div className="inline-block  relative">
-                Công cụ
-                <div className="absolute right-[-130px] top-[75px] hidden  group-hover:block ">
-                  <DropDown option={1} />
-                </div>
-              </div>
-              <p className="inline-block hover:scale-125 duration-300 ml-[5px] text-[10px] font-medium text-white bg-[#FC5434] px-2 rounded-lg leading-4	">
-                MỚI
-              </p>
-              <IoMdArrowDropdown className="text-white ml-1 text-[20px] inline-block" />
-            </div>
+
             <Link
               className="h-16 leading-[64px] hover:bg-privaryhover px-2"
               href="/"
             >
               Gói đăng tin miễn phí
             </Link>
+            <Link
+              className="h-16 leading-[64px] hover:bg-privaryhover px-2"
+              href="/"
+            >
+              Công cụ tính lương
+            </Link>
           </div>
         </div>
         <div className="d:flex p:hidden  text-[13px] font-semibold ">
-          <div className="h-16 leading-[64px] hover:bg-privaryhover pl-[28px] pr-[20px] relative  group">
-            Miền nam
-            <IoMdArrowDropdown className="text-white ml-1 text-[20px] inline-block" />
-            <div className="absolute right-0 top-[75px] hidden  group-hover:block ">
-              <DropDownS />
-            </div>
-          </div>
           {isLoggedIn ? (
             <div className="pl-[5px]  h-16  flex justify-between gap-5 items-center ">
               <BsBellFill className="hover:bg-colorBlueBoldHover text-[30px] p-2 text-white rounded-full" />
@@ -137,7 +125,7 @@ const Header = ({ Login, Click }) => {
               onClick={() => Login(true)}
             >
               <p className=" text-[10px] leading-[16px] font-semibold">
-                Người tìm việc
+                Nhà tìm việc
               </p>
               <h3 className=" text-[14px]  leading-[24px] font-semibold">
                 Đăng ký/Đăng nhập
@@ -146,69 +134,9 @@ const Header = ({ Login, Click }) => {
           )}
           <Link to="/employer">
             <div className="h-16 text-[14px]  leading-[64px] hover:bg-privaryhover pl-[28px] pr-[20px] border-l border-[#5C27D6]">
-              Nhà Tuyển Dụng
+              Người tìm việc
             </div>
           </Link>
-        </div>
-      </div>
-
-      <div className="w-full bg-white border-b cursor-pointer d:block p:hidden">
-        <div className="bg-white h-[49px]  text-primary items-center flex flex-row justify-evenly mx-60">
-          <div
-            className="ml-10 hover:scale-125 duration-300 hover:text-black"
-            onClick={() => Click(true)}
-          >
-            <BsListTask className=" text-[34px] font-bold" />
-          </div>
-          <div onClick={() => Click(true)}>
-            <ul className="flex gap-1 items-center text-[13px] font-semibold">
-              <li className="flex items-center hover:bg-colortopdownGray2 p-2">
-                Bán buôn - Bán lẻ - Quản lý cửa hàng
-              </li>
-              <HeaderItem text="Kinh Doanh" />
-              <HeaderItem text="Marketing" />
-              <HeaderItem text="Khoa học - Kỹ thuật" />
-              <HeaderItem text=" Nghề nghiệp khác" />
-              <HeaderItem text="Hành chính - Thư ký" />
-              <div className="bg-[#B6B6B8] w-1 h-1 rounded-sm mx-2 inline-block "></div>
-              <li className="flex items-center hover:bg-colortopdownGray2 p-2">
-                Kế toán
-              </li>
-            </ul>
-          </div>
-          <div className="bg-[rgba(225,240,255,1)] leading-[50px]  text-[#0669cc] hover:bg-[rgba(188,221,255,1)] px-6 ">
-            Tạo hồ sơ ngay
-          </div>
-        </div>
-      </div>
-
-      <div className="d:hidden p:flex bg-white w-full border-b h-[49px]  justify-between items-center ">
-        <div className=" hover:text-black ml-2" onClick={() => Click(true)}>
-          <BsListTask className=" text-[34px] font-bold" />
-        </div>
-
-        <div className="flex  overflow-x-auto w-[1500px]">
-          <nav class="flex flex-nowrap bg-white p-4 h-[49px] items-center">
-            <div>
-              <ul className="flex gap-1 items-center text-[13px] font-semibold  w-[1300px]">
-                <li className="  hover:bg-colortopdownGray2 p-2 w-[270px]">
-                  Bán buôn - Bán lẻ - Quản lý cửa hàng
-                </li>
-                <HeaderItem text="Kinh Doanh" />
-                <HeaderItem text="Marketing" />
-                <HeaderItem text="Khoa học - Kỹ thuật" />
-                <HeaderItem text=" Nghề nghiệp khác" />
-                <HeaderItem text="Hành chính - Thư ký" />
-                <div className="bg-[#B6B6B8] w-1 h-1 rounded-sm mx-2 inline-block "></div>
-                <li className="inline-block w-[90px] hover:bg-colortopdownGray2 p-2">
-                  Kế toán
-                </li>
-                <div className="bg-[rgba(225,240,255,1)] leading-[49px]  text-[#0669cc] hover:bg-[rgba(188,221,255,1)] px-6 ">
-                  Tạo hồ sơ ngay
-                </div>
-              </ul>
-            </div>
-          </nav>
         </div>
       </div>
     </div>

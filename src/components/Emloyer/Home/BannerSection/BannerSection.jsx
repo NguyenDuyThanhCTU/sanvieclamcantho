@@ -24,7 +24,7 @@ const BannerSection = () => {
     },
   ];
   return (
-    <div className="bg-[#f3f5fa] my-12">
+    <div className="bg-[#f3f5fa] my-12 mx-36">
       <div className="flex justify-center items-center">
         <img src="https://ntd.vieclam24h.vn/img/man_university.png" alt="img" />
         <h3 className="text-[32px] font-semibold  ml-3 text-center">

@@ -1,8 +1,9 @@
 import React from "react";
-import Button from "../../Item/Button";
+import Button from "../../../Item/Button";
+
 const TopSection = () => {
   return (
-    <div className="flex justify-center items-center gap-3">
+    <div className="flex justify-center items-center gap-3  ">
       <div className="">
         <div className="w-[60px] h-[6px] bg-colorBlueBold"></div>
         <div className="text-[36px] font-bold">

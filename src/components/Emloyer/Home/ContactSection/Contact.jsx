@@ -68,7 +68,7 @@ const Contact = () => {
     },
   ];
   return (
-    <div className="mx-20">
+    <div className=" mx-36 mb-7">
       <Swiper
         slidesPerView={6}
         loop={true}
