@@ -152,3 +152,27 @@ export const ComboServicePrices = [
     bestseller: false,
   },
 ];
+
+export const Recruiments = [
+  {
+    rid: 1,
+    name: "Tin nâng cao (4 tuần)",
+    image:
+      "https://ntd.vieclam24h.vn/_next/image?url=https%3A%2F%2Fcdn1.vieclam24h.vn%2Fimages%2Fcombo_posting_package%2F2023%2F03%2F29%2F167146482628_168007075312.png&w=640&q=75",
+    price: "1,560,000",
+  },
+  {
+    rid: 2,
+    name: "Tin trang ngành",
+    image:
+      "https://ntd.vieclam24h.vn/_next/image?url=https%3A%2F%2Fcdn1.vieclam24h.vn%2Fimages%2Fcombo_posting_package%2F2022%2F12%2F19%2Fimages%2F167146493057.png&w=640&q=75",
+    price: "3,640,000",
+  },
+  {
+    rid: 3,
+    name: "Tin trang chủ",
+    image:
+      "https://ntd.vieclam24h.vn/_next/image?url=https%3A%2F%2Fcdn1.vieclam24h.vn%2Fimages%2Fcombo_posting_package%2F2022%2F12%2F19%2Fimages%2F167146533624.png&w=640&q=75",
+    price: "7,476,000",
+  },
+];

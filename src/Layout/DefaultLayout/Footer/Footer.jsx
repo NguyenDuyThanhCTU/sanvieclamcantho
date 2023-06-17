@@ -98,7 +98,7 @@ const Footer = () => {
       </div>
       <div className="pt-8 flex justify-center ">
         <div className="w-[1100px] border-b border-gray-400 flex justify-between pb-8 font-light d:flex-row p:flex-col gap-5 p:items-center d:items-start">
-          <div className="max-w-[528px]">
+          <div className="max-w-[528px]  p:px-5 d:px-0">
             <h2 className="font-bold ml-2">Về chúng tôi</h2>
 
             <h3 className="mt-[14px] text-[12px] font-semibold ml-2">
@@ -127,20 +127,27 @@ const Footer = () => {
               </p>
             </div>
           </div>
-          <div className="flex gap-20">
-            <div>
-              <h2 className="font-bold">Thông tin</h2>
-              <ul className="mt-[14px] text-[12px] font-normal flex flex-col gap-1">
-                <li>Cẩm nang nghề nghiệp</li>
-                <li>Báo giá dịch vụ</li>
-                <li>Điều khoản sử dụng</li>
-                <li>Quy định bảo mật</li>
-                <li>Sơ đồ trang web</li>
-              </ul>
+
+          <div className="flex gap-5 flex-col w-[200px]">
+            <h2 className="font-bold">Thông tin</h2>
+            <div className="flex flex-col items-start gap-3 text-[13px] font-normal">
+              <p>Cẩm nang nghề nghiệp</p>
+              <p>Báo giá dịch vụ</p>
+              <p>Điều khoản sử dụng</p>
+              <p>Quy định bảo mật</p>
+              <p>Sơ đồ trang web</p>
             </div>
-            <div>
-              <h2>Kết nối với chúng tôi</h2>
-            </div>
+          </div>
+          <div className="flex gap-5 flex-col ">
+            <h2 className="font-bold">Kết nối với chúng tôi</h2>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1995868.7685369414!2d105.71564137330311!3d12.303581963121088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a0895a51d60719%3A0x9d76b0035f6d53d0!2sCan%20Tho%20University!5e0!3m2!1sen!2s!4v1686798894048!5m2!1sen!2s"
+              width="300"
+              height="300"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
       </div>

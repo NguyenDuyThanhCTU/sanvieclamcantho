@@ -5,7 +5,7 @@ import { TiTick } from "react-icons/ti";
 import { BiMinus, BiPlus } from "react-icons/bi";
 import { RiMagicLine } from "react-icons/ri";
 import { AiOutlineQuestionCircle } from "react-icons/ai";
-import { Button, Popover, Space } from "antd";
+import { Popover, Space } from "antd";
 
 const Combo = ({
   image,

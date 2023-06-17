@@ -45,7 +45,7 @@
 
 .truncate {
     white-space: nowrap; /* Ngăn chữ xuống dòng */
-    text-overflow: ellipsis; /* Hiển thị dấu "..." */
+    text-overflow: ellipsis;
     overflow: hidden; /* Ẩn chữ dư thừa */
   }
 
