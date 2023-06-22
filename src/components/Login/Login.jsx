@@ -6,7 +6,8 @@ import { RightSide } from "./UI/RightSide";
 import { ChangePassword } from "./UI/ChangePassword";
 import Loading from "../Item/Loading";
 import Alert from "../Item/Alert";
-
+import { IoChevronBackOutline } from "react-icons/io5";
+import { Link } from "react-router-dom";
 const Login = () => {
   const [Correct, setCorrect] = useState(false);
   const [Uncorrect, setUncorrect] = useState(false);
@@ -15,6 +16,11 @@ const Login = () => {
 
   return (
     <div className="bg-[rgba(0,0,0,0.3)] w-full h-full z-50 absolute">
+      <div className="relative p:block d:hidden top-3 left-3 text-[25px] ">
+        <Link to="/">
+          <IoChevronBackOutline />
+        </Link>
+      </div>
       <div className="">
         <Alert correct={Correct} uncorrect={Uncorrect} />
       </div>

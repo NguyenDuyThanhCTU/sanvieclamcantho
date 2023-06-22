@@ -1,8 +1,7 @@
-import React, { ReactNode } from "react";
+import React from "react";
 import { useState, useEffect } from "react";
 import Header from "./Header/Header";
 import Footer from "./Footer/Footer";
-import OnTop from "./PopUp/OnTop";
 import Hotline from "./PopUp/Hotline";
 import HeadLess from "../../components/Home/HeadLess/HeadLess";
 // import Login from "../../components/Login/Login";
@@ -24,11 +23,13 @@ const DefaultLayout = ({ children }) => {
     <div className="relative">
       {/* {isLogin && <Login Login={setIsLogin} />} */}
       {Headless && <HeadLess Click={setHeadLess} />}
-      <Header Login={setIsLogin} Click={setHeadLess} />
-      <main className="z-0">{children}</main>
-      <Footer />
-      <div className="z-50 fixed">
-        <OnTop />
+      <div className="">
+        <Header />
+      </div>
+      {/* <Header Login={setIsLogin} Click={setHeadLess} /> */}
+      {/* <main className="z-0">{children}</main> */}
+      {/* <Footer /> */}
+      <div className="z-10 fixed">
         <Hotline />
       </div>
     </div>

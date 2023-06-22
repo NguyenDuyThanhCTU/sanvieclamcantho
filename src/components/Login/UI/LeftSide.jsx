@@ -125,7 +125,7 @@ export const LeftSide = ({
       </div>
 
       <div className="border h-0 w-full relative mt-2 mb-4">
-        <p className="absolute bg-white px-10 py-1  -top-4 d:left-[20%] p:left-[9%]">
+        <p className="absolute bg-white d:px-10 py-1 p:px-3 -top-4 d:left-[20%] p:left-[9%]">
           Hoặc tiếp tục với Username
         </p>
       </div>
